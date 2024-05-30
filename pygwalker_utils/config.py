@@ -35,7 +35,7 @@ def load_config(filename: str, encoding='utf-8'):
         CONFIG.update(json.load(open(filename, 'r', encoding=encoding)))
     except Exception as e:
         import logging
-        logging.warn(f"Cannot load user-specified configuration file {filename}: {e}")
+        logging.warning(f"Cannot load user-specified configuration file {filename}: {e}")
 
 class Item:
     __slots__ = ['name', 'type', 'default', 'description']
