@@ -9,8 +9,7 @@ from pygwalker.utils.encode import DataFrameEncoder
 
 jinja_env = Environment(
     loader=PackageLoader("pygwalker"),
-    autoescape=(()),  # select_autoescape()
-)
+    autoescape=True)
 
 
 def gwalker_script() -> str:
