@@ -8,8 +8,7 @@ from pygwalker.utils.display import display_html
 
 jinja_env = Environment(
     loader=PackageLoader("pygwalker"),
-    autoescape=(()),  # select_autoescape()
-)
+    autoescape=True)
 
 
 class ImgData(BaseModel):
